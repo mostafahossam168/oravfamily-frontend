@@ -17,7 +17,6 @@
           src="images/logo.jpg"
           class="nav-logo-img"
           alt="أوراف"
-          style="height: 50px; width: auto; object-fit: contain"
         />
       </a>
       <div class="nav-menu">
@@ -36,32 +35,9 @@
       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </nav>
 
-    <div
-      style="
-        min-height: 100vh;
-        background: var(--cream);
-        padding: 120px 5% 80px;
-        direction: rtl;
-      "
-    >
-      <div style="max-width: 860px; margin: 0 auto">
-        <a
-          href="index.html"
-          style="
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: transparent;
-            border: 0.5px solid rgba(45, 95, 94, 0.25);
-            border-radius: 10px;
-            padding: 8px 18px;
-            font-family: &quot;Tajawal&quot;, sans-serif;
-            font-size: 14px;
-            color: var(--teal);
-            text-decoration: none;
-            margin-bottom: 40px;
-          "
-        >
+    <div class="page-wrapper">
+      <div class="content-container">
+        <a href="index.html" class="btn-back">
           <svg
             width="16"
             height="16"
@@ -76,166 +52,45 @@
           رجوع
         </a>
         <div class="sec-label">الشركة</div>
-        <h2 class="sec-title" style="margin-bottom: 20px">كيف نعمل</h2>
-        <p class="sec-desc" style="margin-bottom: 24px">
+        <h2 class="sec-title mb-20">كيف نعمل</h2>
+        <p class="sec-desc mb-24">
           رحلتك مع أوراف بسيطة ومنظمة. لا تعقيد ولا إجراءات طويلة.
         </p>
-        <div style="display: flex; flex-direction: column; gap: 0">
-          <div
-            style="
-              display: flex;
-              gap: 16px;
-              padding: 20px 0;
-              border-bottom: 0.5px solid rgba(45, 95, 94, 0.1);
-            "
-          >
-            <div
-              style="
-                width: 36px;
-                height: 36px;
-                border-radius: 50%;
-                background: var(--teal);
-                color: white;
-                font-size: 14px;
-                font-weight: 700;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
-              "
-            >
-              ١
-            </div>
+        <div class="pg-step-list">
+          <div class="pg-step-item">
+            <div class="pg-step-num pg-step-num--primary">١</div>
             <div>
-              <div
-                style="
-                  font-size: 15px;
-                  font-weight: 700;
-                  color: var(--teal-dark);
-                  margin-bottom: 4px;
-                "
-              >
-                تواصل معنا
-              </div>
-              <div style="font-size: 13px; color: var(--text-mid)">
+              <div class="pg-step-title">تواصل معنا</div>
+              <div class="pg-step-desc">
                 أرسل لنا رسالة أو اتصل بنا مباشرة. سيرد عليك فريقنا خلال ٢٤ ساعة
                 لتحديد موعد جلسة تقييم مجانية.
               </div>
             </div>
           </div>
-          <div
-            style="
-              display: flex;
-              gap: 16px;
-              padding: 20px 0;
-              border-bottom: 0.5px solid rgba(45, 95, 94, 0.1);
-            "
-          >
-            <div
-              style="
-                width: 36px;
-                height: 36px;
-                border-radius: 50%;
-                background: var(--teal-light);
-                color: var(--teal);
-                font-size: 14px;
-                font-weight: 700;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
-              "
-            >
-              ٢
-            </div>
+          <div class="pg-step-item">
+            <div class="pg-step-num pg-step-num--light">٢</div>
             <div>
-              <div
-                style="
-                  font-size: 15px;
-                  font-weight: 700;
-                  color: var(--teal-dark);
-                  margin-bottom: 4px;
-                "
-              >
-                جلسة التقييم
-              </div>
-              <div style="font-size: 13px; color: var(--text-mid)">
+              <div class="pg-step-title">جلسة التقييم</div>
+              <div class="pg-step-desc">
                 نجلس معك لنفهم وضع أسرتك ونحدد الأولويات — جلسة مجانية لا التزام
                 فيها.
               </div>
             </div>
           </div>
-          <div
-            style="
-              display: flex;
-              gap: 16px;
-              padding: 20px 0;
-              border-bottom: 0.5px solid rgba(45, 95, 94, 0.1);
-            "
-          >
-            <div
-              style="
-                width: 36px;
-                height: 36px;
-                border-radius: 50%;
-                background: var(--teal-light);
-                color: var(--teal);
-                font-size: 14px;
-                font-weight: 700;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
-              "
-            >
-              ٣
-            </div>
+          <div class="pg-step-item">
+            <div class="pg-step-num pg-step-num--light">٣</div>
             <div>
-              <div
-                style="
-                  font-size: 15px;
-                  font-weight: 700;
-                  color: var(--teal-dark);
-                  margin-bottom: 4px;
-                "
-              >
-                خطتك الخاصة
-              </div>
-              <div style="font-size: 13px; color: var(--text-mid)">
+              <div class="pg-step-title">خطتك الخاصة</div>
+              <div class="pg-step-desc">
                 نصمم لك خطة تنمية أسرية واقعية ومقيّسة مبنية على واقعك الفعلي.
               </div>
             </div>
           </div>
-          <div style="display: flex; gap: 16px; padding: 20px 0">
-            <div
-              style="
-                width: 36px;
-                height: 36px;
-                border-radius: 50%;
-                background: var(--teal-light);
-                color: var(--teal);
-                font-size: 14px;
-                font-weight: 700;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
-              "
-            >
-              ٤
-            </div>
+          <div class="pg-step-item">
+            <div class="pg-step-num pg-step-num--light">٤</div>
             <div>
-              <div
-                style="
-                  font-size: 15px;
-                  font-weight: 700;
-                  color: var(--teal-dark);
-                  margin-bottom: 4px;
-                "
-              >
-                ابدأ وشوف الفرق
-              </div>
-              <div style="font-size: 13px; color: var(--text-mid)">
+              <div class="pg-step-title">ابدأ وشوف الفرق</div>
+              <div class="pg-step-desc">
                 ابدأ رحلتك وتابع تطور أسرتك بمؤشرات حقيقية. معظم الأسر تلاحظ
                 فرقاً واضحاً خلال شهر.
               </div>
@@ -250,12 +105,7 @@
         <div class="footer-brand">
           <img
             src="images/logo.jpg"
-            style="
-              height: 52px;
-              width: auto;
-              object-fit: contain;
-              margin-bottom: 10px;
-            "
+            class="footer-logo-img"
             alt="أوراف"
           />
           <p>

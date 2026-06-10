@@ -17,7 +17,6 @@
           src="images/logo.jpg"
           class="nav-logo-img"
           alt="أوراف"
-          style="height: 50px; width: auto; object-fit: contain"
         />
       </a>
       <div class="nav-menu">
@@ -36,32 +35,9 @@
       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </nav>
 
-    <div
-      style="
-        min-height: 100vh;
-        background: var(--cream);
-        padding: 120px 5% 80px;
-        direction: rtl;
-      "
-    >
-      <div style="max-width: 860px; margin: 0 auto">
-        <a
-          href="index.html"
-          style="
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: transparent;
-            border: 0.5px solid rgba(45, 95, 94, 0.25);
-            border-radius: 10px;
-            padding: 8px 18px;
-            font-family: &quot;Tajawal&quot;, sans-serif;
-            font-size: 14px;
-            color: var(--teal);
-            text-decoration: none;
-            margin-bottom: 40px;
-          "
-        >
+    <div class="page-wrapper">
+      <div class="content-container">
+        <a href="index.html" class="btn-back">
           <svg
             width="16"
             height="16"
@@ -76,136 +52,36 @@
           رجوع
         </a>
         <div class="sec-label">الشركة</div>
-        <h2 class="sec-title" style="margin-bottom: 20px">شركاؤنا</h2>
-        <p class="sec-desc" style="margin-bottom: 28px">
+        <h2 class="sec-title mb-20">شركاؤنا</h2>
+        <p class="sec-desc mb-28">
           نفخر بشراكاتنا مع مجموعة من المؤسسات والجهات الموثوقة التي تشاركنا
           رؤيتنا في تنمية الأسرة العربية. هذه الشراكات تُمكّننا من تقديم خدمات
           أشمل وأعمق لأسرتك.
         </p>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px">
-          <div
-            style="
-              background: var(--teal-light);
-              border-radius: 14px;
-              padding: 20px;
-            "
-          >
-            <div
-              style="
-                font-size: 13px;
-                font-weight: 700;
-                color: var(--teal-dark);
-                margin-bottom: 4px;
-              "
-            >
-              مركز الأسرة
-            </div>
-            <div style="font-size: 12px; color: var(--text-mid)">
-              إرشاد أسري متخصص
-            </div>
+        <div class="pg-grid-2">
+          <div class="pg-card-teal">
+            <div class="pg-card-title">مركز الأسرة</div>
+            <div class="pg-card-desc">إرشاد أسري متخصص</div>
           </div>
-          <div
-            style="
-              background: var(--bronze-light);
-              border-radius: 14px;
-              padding: 20px;
-            "
-          >
-            <div
-              style="
-                font-size: 13px;
-                font-weight: 700;
-                color: var(--bronze-dark);
-                margin-bottom: 4px;
-              "
-            >
-              أكاديمية النمو
-            </div>
-            <div style="font-size: 12px; color: var(--text-mid)">
-              تعليم وتطوير
-            </div>
+          <div class="pg-card-bronze">
+            <div class="pg-card-title">أكاديمية النمو</div>
+            <div class="pg-card-desc">تعليم وتطوير</div>
           </div>
-          <div
-            style="
-              background: var(--teal-light);
-              border-radius: 14px;
-              padding: 20px;
-            "
-          >
-            <div
-              style="
-                font-size: 13px;
-                font-weight: 700;
-                color: var(--teal-dark);
-                margin-bottom: 4px;
-              "
-            >
-              تقنية المستقبل
-            </div>
-            <div style="font-size: 12px; color: var(--text-mid)">شريك تقني</div>
+          <div class="pg-card-teal">
+            <div class="pg-card-title">تقنية المستقبل</div>
+            <div class="pg-card-desc">شريك تقني</div>
           </div>
-          <div
-            style="
-              background: var(--bronze-light);
-              border-radius: 14px;
-              padding: 20px;
-            "
-          >
-            <div
-              style="
-                font-size: 13px;
-                font-weight: 700;
-                color: var(--bronze-dark);
-                margin-bottom: 4px;
-              "
-            >
-              جمعية الأسرة
-            </div>
-            <div style="font-size: 12px; color: var(--text-mid)">
-              شراكة مجتمعية
-            </div>
+          <div class="pg-card-bronze">
+            <div class="pg-card-title">جمعية الأسرة</div>
+            <div class="pg-card-desc">شراكة مجتمعية</div>
           </div>
-          <div
-            style="
-              background: var(--teal-light);
-              border-radius: 14px;
-              padding: 20px;
-            "
-          >
-            <div
-              style="
-                font-size: 13px;
-                font-weight: 700;
-                color: var(--teal-dark);
-                margin-bottom: 4px;
-              "
-            >
-              مبادرة الرعاية
-            </div>
-            <div style="font-size: 12px; color: var(--text-mid)">
-              دعم اجتماعي
-            </div>
+          <div class="pg-card-teal">
+            <div class="pg-card-title">مبادرة الرعاية</div>
+            <div class="pg-card-desc">دعم اجتماعي</div>
           </div>
-          <div
-            style="
-              background: var(--bronze-light);
-              border-radius: 14px;
-              padding: 20px;
-            "
-          >
-            <div
-              style="
-                font-size: 13px;
-                font-weight: 700;
-                color: var(--bronze-dark);
-                margin-bottom: 4px;
-              "
-            >
-              معهد البحوث
-            </div>
-            <div style="font-size: 12px; color: var(--text-mid)">
-              أبحاث وتطوير
-            </div>
+          <div class="pg-card-bronze">
+            <div class="pg-card-title">معهد البحوث</div>
+            <div class="pg-card-desc">أبحاث وتطوير</div>
           </div>
         </div>
       </div>
@@ -216,12 +92,7 @@
         <div class="footer-brand">
           <img
             src="images/logo.jpg"
-            style="
-              height: 52px;
-              width: auto;
-              object-fit: contain;
-              margin-bottom: 10px;
-            "
+            class="footer-logo-img"
             alt="أوراف"
           />
           <p>

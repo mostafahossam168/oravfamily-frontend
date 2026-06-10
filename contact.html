@@ -17,7 +17,6 @@
           src="images/logo.jpg"
           class="nav-logo-img"
           alt="أوراف"
-          style="height: 50px; width: auto; object-fit: contain"
         />
       </a>
       <div class="nav-menu">
@@ -36,32 +35,9 @@
       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </nav>
 
-    <div
-      style="
-        min-height: 100vh;
-        background: var(--cream);
-        padding: 120px 5% 80px;
-        direction: rtl;
-      "
-    >
-      <div style="max-width: 860px; margin: 0 auto">
-        <a
-          href="index.html"
-          style="
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: transparent;
-            border: 0.5px solid rgba(45, 95, 94, 0.25);
-            border-radius: 10px;
-            padding: 8px 18px;
-            font-family: &quot;Tajawal&quot;, sans-serif;
-            font-size: 14px;
-            color: var(--teal);
-            text-decoration: none;
-            margin-bottom: 40px;
-          "
-        >
+    <div class="page-wrapper">
+      <div class="content-container">
+        <a href="index.html" class="btn-back">
           <svg
             width="16"
             height="16"
@@ -76,33 +52,13 @@
           رجوع
         </a>
         <div class="sec-label">تواصل</div>
-        <h2 class="sec-title" style="margin-bottom: 20px">اتصل بنا</h2>
-        <p class="sec-desc" style="margin-bottom: 24px">
+        <h2 class="sec-title mb-20">اتصل بنا</h2>
+        <p class="sec-desc mb-24">
           فريقنا مستعد لمساعدتك. تواصل معنا عبر الطريقة الأنسب لك.
         </p>
-        <div style="display: flex; flex-direction: column; gap: 14px">
-          <div
-            style="
-              display: flex;
-              gap: 13px;
-              padding: 18px;
-              background: var(--white);
-              border-radius: 14px;
-              border: 0.5px solid rgba(45, 95, 94, 0.1);
-            "
-          >
-            <div
-              style="
-                width: 40px;
-                height: 40px;
-                border-radius: 11px;
-                background: var(--teal-light);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
-              "
-            >
+        <div class="pg-info-list">
+          <div class="pg-info-item">
+            <div class="pg-info-icon">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -118,43 +74,12 @@
               </svg>
             </div>
             <div>
-              <div
-                style="
-                  font-size: 12px;
-                  font-weight: 700;
-                  color: var(--teal-dark);
-                  margin-bottom: 2px;
-                "
-              >
-                هاتف
-              </div>
-              <div style="font-size: 14px; color: var(--text-mid)">
-                +966 50 000 0000
-              </div>
+              <div class="pg-info-label">هاتف</div>
+              <div class="pg-info-value">+966 50 000 0000</div>
             </div>
           </div>
-          <div
-            style="
-              display: flex;
-              gap: 13px;
-              padding: 18px;
-              background: var(--white);
-              border-radius: 14px;
-              border: 0.5px solid rgba(45, 95, 94, 0.1);
-            "
-          >
-            <div
-              style="
-                width: 40px;
-                height: 40px;
-                border-radius: 11px;
-                background: var(--teal-light);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
-              "
-            >
+          <div class="pg-info-item">
+            <div class="pg-info-icon">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -171,43 +96,12 @@
               </svg>
             </div>
             <div>
-              <div
-                style="
-                  font-size: 12px;
-                  font-weight: 700;
-                  color: var(--teal-dark);
-                  margin-bottom: 2px;
-                "
-              >
-                بريد إلكتروني
-              </div>
-              <div style="font-size: 14px; color: var(--text-mid)">
-                info@orav.com
-              </div>
+              <div class="pg-info-label">بريد إلكتروني</div>
+              <div class="pg-info-value">info@orav.com</div>
             </div>
           </div>
-          <div
-            style="
-              display: flex;
-              gap: 13px;
-              padding: 18px;
-              background: var(--white);
-              border-radius: 14px;
-              border: 0.5px solid rgba(45, 95, 94, 0.1);
-            "
-          >
-            <div
-              style="
-                width: 40px;
-                height: 40px;
-                border-radius: 11px;
-                background: var(--teal-light);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
-              "
-            >
+          <div class="pg-info-item">
+            <div class="pg-info-icon">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -222,19 +116,8 @@
               </svg>
             </div>
             <div>
-              <div
-                style="
-                  font-size: 12px;
-                  font-weight: 700;
-                  color: var(--teal-dark);
-                  margin-bottom: 2px;
-                "
-              >
-                ساعات العمل
-              </div>
-              <div style="font-size: 14px; color: var(--text-mid)">
-                السبت – الخميس: ٩ص – ١٠م
-              </div>
+              <div class="pg-info-label">ساعات العمل</div>
+              <div class="pg-info-value">السبت – الخميس: ٩ص – ١٠م</div>
             </div>
           </div>
         </div>
@@ -246,12 +129,7 @@
         <div class="footer-brand">
           <img
             src="images/logo.jpg"
-            style="
-              height: 52px;
-              width: auto;
-              object-fit: contain;
-              margin-bottom: 10px;
-            "
+            class="footer-logo-img"
             alt="أوراف"
           />
           <p>
